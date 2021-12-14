@@ -1,42 +1,40 @@
 ﻿using System;
 using System.IO;
-using System.Diagnostics;
-using Syroot.Windows.IO;
+using System.Net;
 namespace updater
 {
     class Program
     {
         static void Main()
         {
-            string downloadsPath = new KnownFolder(KnownFolderType.Downloads).Path;
-            if (File.Exists(downloadsPath+"\\megabyte112RP.zip"))
+            // Remove older version
+            if (File.Exists("..\\megabyte112RP.zip")) {File.Delete("..\\megabyte112RP.zip");}
+
+            // find the parent directory, check if it's the resourcepacks folder
+            string dir = Directory.GetParent(Directory.GetCurrentDirectory()).ToString();
+            if (dir.ToString().Substring(dir.Length-13, 13) != "resourcepacks")
             {
-                Console.WriteLine("There is already a resource pack file in your downloads folder.\nPress enter to remove it.");
-                Console.ReadLine();
-                File.Delete(downloadsPath+"\\megabyte112RP.zip");
-            }
-            Console.WriteLine("Installed at:\n" + Directory.GetCurrentDirectory());
-            Console.WriteLine("\nPress enter to continue to GitHub. Save the resource pack to your downloads folder.\nThen come back here and press enter.");
-            Console.ReadLine();
-            var web = new ProcessStartInfo
-            {
-                FileName = "https://github.com/megabyte112/megabyte112-mc-resourcepack/releases",
-                UseShellExecute = true
-            };
-            System.Diagnostics.Process.Start(web);
-            Console.ReadLine();
-            if (!File.Exists(downloadsPath+"\\megabyte112RP.zip"))
-            {
-                Console.WriteLine("The resource pack couldn't be found in your downloads folder.\nPress enter to close, and run the program again to try again.");
+                Console.WriteLine("The updater isn't in the right place.\nMake sure it is only one folder down from \\resourcepacks.\nPress enter to exit.");
                 Console.ReadLine();
                 Environment.Exit(0);
             }
-            else
+
+            // if all is well, begin the download
+            Console.WriteLine("Downloading...");
+            try
             {
-                Console.WriteLine("Resource pack was found.\nPress enter to move to Minecraft");
-                Console.ReadLine();
-                File.Move(downloadsPath+"\\megabyte112RP.zip", "..\\megabyte112.zip");
+                WebClient client = new WebClient();
+                client.DownloadFile("https://github.com/megabyte112/megabyte112-mc-resourcepack/releases/latest/download/megabyte112RP.zip", dir + "\\megabyte112RP.zip");
             }
+            catch
+            {
+                Console.WriteLine("There was a problem somewhere.\nCheck that the resource pack is not in use in Minecraft.\nFailing that, come talk to me.");
+                Console.WriteLine("\n\nFailed - Enter to exit");
+                Console.ReadLine();
+                Environment.Exit(0);
+            }
+            Console.WriteLine("Success!\nPress enter to close.");
+            Console.ReadLine();
         }
     }
 }
