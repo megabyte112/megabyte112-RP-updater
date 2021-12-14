@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BxxvMqLEvRjwuI7BgMgoni6IliwCaOYalzE9x+0N4V3d/N9V+5JK5bX7gBUHyXq/oIW3QekRFTFf/DUwvPAunQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aidan\\.nuget\\packages\\syroot.windows.io.knownfolders\\1.2.3\\syroot.windows.io.knownfolders.1.2.3.nupkg.sha512",
+    "C:\\Users\\Aidan\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
