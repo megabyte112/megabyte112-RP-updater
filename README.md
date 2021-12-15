@@ -4,7 +4,9 @@ Note that this is for Windows only.
 
 
 ---------- You need Microsoft .NET 6.0 runtime. ----------
+
 Install here:
+
 https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x64-installer
 
 
