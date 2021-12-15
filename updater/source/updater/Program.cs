@@ -12,6 +12,7 @@ namespace updater
             if (dir.ToString().Substring(dir.Length-13, 13) != "resourcepacks")
             {
                 Console.WriteLine("The updater isn't in the right place.\nMake sure it is in \"\\resourcepacks\\updater\".");
+                Console.WriteLine("Close the program, move to the right location, and try again.");
                 Console.ReadLine();
                 Environment.Exit(0);
             }
@@ -32,7 +33,7 @@ namespace updater
                 Environment.Exit(0);
             }
             // if all is well, begin the download
-            Console.WriteLine("Downloading lastest release...");
+            Console.WriteLine("Downloading latest release...");
             WebClient client = new WebClient();
             client.DownloadFile("https://github.com/megabyte112/megabyte112-mc-resourcepack/releases/latest/download/megabyte112RP.zip", dir + "\\megabyte112RP.zip");
             Console.WriteLine("\n\nSuccess!\nYou can now close the updater.");
