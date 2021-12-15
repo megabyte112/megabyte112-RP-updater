@@ -2,6 +2,12 @@
 A tool for quickly updating the megabyte112 Minecraft resource pack.
 Note that this is for Windows only.
 
+
+---------- You need Microsoft .NET 6.0 runtime. ----------
+Install here:
+https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x64-installer
+
+
 Download from the releases tab, and extract into a folder in the \resourcepacks folder (the .exe file should be  \resourcepacks\updater\updater.exe)
 Open the updater folder (make sure there's no double folders)
 Make sure the resource pack is NOT loaded in minecraft!
