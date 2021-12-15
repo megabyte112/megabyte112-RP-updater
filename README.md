@@ -2,6 +2,8 @@
 A tool for quickly updating the megabyte112 Minecraft resource pack.
 Note that this is for Windows only.
 
+Windows seems to think this is malicious, just click "more options" and "run anyway" if asked.
+
 
 ---------- You need Microsoft .NET 6.0 runtime. ----------
 
