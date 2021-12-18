@@ -1,7 +1,7 @@
 # megabyte112-RP-updater
 A tool for quickly installing or updating the megabyte112 Minecraft resource pack.
 
-Note that this is for Windows only.
+Note that this is for Windows only, and for 64-bit systems.
 
 Download from the releases tab, and install like a regular resource pack.
 
