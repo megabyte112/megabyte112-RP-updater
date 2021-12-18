@@ -13,5 +13,3 @@ C:\Users\Aidan\Documents\GitHub\megabyte112-RP-updater\updater\source\updater\ob
 C:\Users\Aidan\Documents\GitHub\megabyte112-RP-updater\updater\source\updater\obj\Debug\net6.0\ref\updater.dll
 C:\Users\Aidan\Documents\GitHub\megabyte112-RP-updater\updater\source\updater\obj\Debug\net6.0\updater.pdb
 C:\Users\Aidan\Documents\GitHub\megabyte112-RP-updater\updater\source\updater\obj\Debug\net6.0\updater.genruntimeconfig.cache
-C:\Users\Aidan\Documents\GitHub\megabyte112-RP-updater\updater\source\updater\bin\Debug\net6.0\Syroot.KnownFolders.dll
-C:\Users\Aidan\Documents\GitHub\megabyte112-RP-updater\updater\source\updater\obj\Debug\net6.0\updater.csproj.CopyComplete

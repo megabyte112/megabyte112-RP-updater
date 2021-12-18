@@ -7,11 +7,11 @@ namespace updater
     {
         static void Main()
         {
-            // find the parent directory, check if it's the resourcepacks folder
-            string dir = Directory.GetParent(Directory.GetCurrentDirectory()).ToString();
-            if (dir.ToString().Substring(dir.Length-13, 13) != "resourcepacks")
+            // find the current directory, check if it's the resourcepacks folder
+            string dir = Directory.GetCurrentDirectory().ToString();
+            if (dir.Substring(dir.Length-13, 13) != "resourcepacks")
             {
-                Console.WriteLine("The updater isn't in the right place.\nMake sure it is in \"\\resourcepacks\\updater\".");
+                Console.WriteLine("The updater isn't in the right place.\nMake sure it is in Minecraft's \"resourcepacks\" folder.");
                 Console.WriteLine("Close the program, move to the right location, and try again.");
                 Console.ReadLine();
                 Environment.Exit(0);
@@ -19,10 +19,10 @@ namespace updater
             // Remove older version
             try 
             {
-                if (File.Exists("..\\megabyte112RP.zip"))
+                if (File.Exists("megabyte112RP.zip"))
                 {
                     Console.WriteLine("Removing older version...");
-                    File.Delete("..\\megabyte112RP.zip");
+                    File.Delete("megabyte112RP.zip");
                 }
             }
             catch
@@ -32,7 +32,7 @@ namespace updater
                 Console.ReadLine();
                 Environment.Exit(0);
             }
-            // if all is well, begin the download
+            // if all is well, begin the download and save to this folder
             Console.WriteLine("Downloading latest release...");
             WebClient client = new WebClient();
             client.DownloadFile("https://github.com/megabyte112/megabyte112-mc-resourcepack/releases/latest/download/megabyte112RP.zip", dir + "\\megabyte112RP.zip");

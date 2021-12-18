@@ -5,10 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PublishSingleFile>true</PublishSingleFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Syroot.Windows.IO.KnownFolders" Version="1.2.3" />
-  </ItemGroup>
 
 </Project>

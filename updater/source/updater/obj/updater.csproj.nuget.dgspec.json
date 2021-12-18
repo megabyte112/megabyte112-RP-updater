@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj": {}
+    "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj": {
+    "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
+        "projectUniqueName": "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
         "projectName": "updater",
-        "projectPath": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
-        "packagesPath": "C:\\Users\\Aidan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\obj\\",
+        "projectPath": "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
+        "packagesPath": "C:\\Users\\aidan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aidan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aidan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,12 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Syroot.Windows.IO.KnownFolders": {
-              "target": "Package",
-              "version": "[1.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -55,12 +49,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[6.0.0, 6.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[6.0.0, 6.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[6.0.0, 6.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

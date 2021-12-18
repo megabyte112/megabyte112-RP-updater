@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BxxvMqLEvRjwuI7BgMgoni6IliwCaOYalzE9x+0N4V3d/N9V+5JK5bX7gBUHyXq/oIW3QekRFTFf/DUwvPAunQ==",
+  "dgSpecHash": "VTLzOwV58mjpWqZBDHb2oHVwrzkFs7P+FQVU7kIiAM3k5pd/0sfN1rkigmniWdXpvAhIihmrzvYIOpDAefB+kA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
+  "projectFilePath": "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Aidan\\.nuget\\packages\\syroot.windows.io.knownfolders\\1.2.3\\syroot.windows.io.knownfolders.1.2.3.nupkg.sha512",
-    "C:\\Users\\Aidan\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+    "C:\\Users\\aidan\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.0\\microsoft.netcore.app.runtime.win-x64.6.0.0.nupkg.sha512",
+    "C:\\Users\\aidan\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.0.nupkg.sha512",
+    "C:\\Users\\aidan\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.0\\microsoft.aspnetcore.app.runtime.win-x64.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
