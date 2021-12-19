@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj": {}
+    "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj": {
+    "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
+        "projectUniqueName": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
         "projectName": "updater",
-        "projectPath": "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
-        "packagesPath": "C:\\Users\\aidan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\obj\\",
+        "projectPath": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
+        "packagesPath": "C:\\Users\\Aidan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aidan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aidan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

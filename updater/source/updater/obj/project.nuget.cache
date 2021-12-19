@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VTLzOwV58mjpWqZBDHb2oHVwrzkFs7P+FQVU7kIiAM3k5pd/0sfN1rkigmniWdXpvAhIihmrzvYIOpDAefB+kA==",
+  "dgSpecHash": "AcP3VCdKHVTih3QplcAGg998zYKd8chWjB40A09Jc6QW+5LOZDbL9a6/i/cJkoEN2X+jHW2BBcCMxn4735SAew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
+  "projectFilePath": "C:\\Users\\Aidan\\Documents\\GitHub\\megabyte112-RP-updater\\updater\\source\\updater\\updater.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\aidan\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.0\\microsoft.netcore.app.runtime.win-x64.6.0.0.nupkg.sha512",
-    "C:\\Users\\aidan\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.0.nupkg.sha512",
-    "C:\\Users\\aidan\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.0\\microsoft.aspnetcore.app.runtime.win-x64.6.0.0.nupkg.sha512"
+    "C:\\Users\\Aidan\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.0\\microsoft.netcore.app.runtime.win-x64.6.0.0.nupkg.sha512",
+    "C:\\Users\\Aidan\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.0.nupkg.sha512",
+    "C:\\Users\\Aidan\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.0\\microsoft.aspnetcore.app.runtime.win-x64.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

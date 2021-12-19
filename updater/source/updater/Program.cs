@@ -7,12 +7,22 @@ namespace updater
     {
         static void Main()
         {
+            // download link
+            string dl = "https://github.com/megabyte112/megabyte112-mc-resourcepack/releases/latest/download/megabyte112RP.zip";
+
             // find the current directory, check if it's the resourcepacks folder
             string dir = Directory.GetCurrentDirectory().ToString();
-            if (dir.Substring(dir.Length-13, 13) != "resourcepacks")
+            if (dir.Length <= 13)   // this saves the code from crashing at the next IF statement
             {
-                Console.WriteLine("The updater isn't in the right place.\nMake sure it is in Minecraft's \"resourcepacks\" folder.");
-                Console.WriteLine("Close the program, move to the right location, and try again.");
+                Console.WriteLine("Failed: Wrong folder");
+                Console.WriteLine("Close the program, move to Minecraft's resourcepacks folder, and try again.");
+                Console.ReadLine();
+                Environment.Exit(0);
+            }
+            else if (dir.Substring(dir.Length-13, 13) != "resourcepacks")
+            {
+                Console.WriteLine("Failed: Wrong folder");
+                Console.WriteLine("Close the program, move to Minecraft's resourcepacks folder, and try again.");
                 Console.ReadLine();
                 Environment.Exit(0);
             }
@@ -27,16 +37,26 @@ namespace updater
             }
             catch
             {
-                Console.WriteLine("\n\nThere was a problem - Check that the resource pack is NOT selected in Minecraft.\nFailing that, come talk to me.");
-                Console.WriteLine("\nFailed - Close and try again");
+                Console.WriteLine("\nFailed: Resource pack is likely in use");
+                Console.WriteLine("Go to Minecraft, deselect the resource pack, click Done, and try again.");
                 Console.ReadLine();
                 Environment.Exit(0);
             }
             // if all is well, begin the download and save to this folder
             Console.WriteLine("Downloading latest release...");
-            WebClient client = new WebClient();
-            client.DownloadFile("https://github.com/megabyte112/megabyte112-mc-resourcepack/releases/latest/download/megabyte112RP.zip", dir + "\\megabyte112RP.zip");
-            Console.WriteLine("\n\nSuccess!\nYou can now close the updater.");
+            try
+            {
+                WebClient client = new WebClient();
+                client.DownloadFile(dl, dir + "\\megabyte112RP.zip");
+            }
+            catch
+            {
+                Console.WriteLine("Failed: Download error");
+                Console.WriteLine("Check your internet and try again");
+                Console.ReadLine();
+                Environment.Exit(0);
+            }
+            Console.WriteLine("\nSuccess!\nYou can now close the updater.");
             Console.ReadLine();
         }
     }
