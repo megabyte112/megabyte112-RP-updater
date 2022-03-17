@@ -34,8 +34,8 @@ namespace updater
             Application.EnableVisualStyles();
             if (dir.Substring(dir.Length-13, 13) != "resourcepacks")
             {
-                MessageBox.Show("This doesn't look like the resourcepacks folder...\nMove to Minecraft's resourcepacks folder and try again.",
-                "Wrong Folder!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("This doesn't look like the resourcepacks folder.\nMove to Minecraft's resourcepacks folder and try again.",
+                "Wrong Folder!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 Environment.Exit(0);
             }
             else if (File.Exists("megabyte112RP.zip"))
@@ -47,10 +47,10 @@ namespace updater
             Controls.Add(button1);
             button1.Click += new EventHandler(button1_click);
         }
-        private void button1_click(object sender, EventArgs e)
+        private async void button1_click(object sender, EventArgs e)
         {
             button1.Enabled=false;
-            DoUpdate();
+            await DoUpdate();
         }
         private static async Task DoUpdate()
         {

@@ -3,7 +3,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net4.7.2</TargetFramework>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>Resources\resourcepack.ico</ApplicationIcon>
+    <ApplicationIcon>resourcepack.ico</ApplicationIcon>
     <UseWindowsForms>true</UseWindowsForms>
     <SelfContained>true</SelfContained>
   </PropertyGroup>
